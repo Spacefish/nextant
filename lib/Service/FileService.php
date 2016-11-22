@@ -132,6 +132,7 @@ class FileService
     {
         $this->userId = $userId;
         Filesystem::init($this->userId, '');
+        // \OC_Util::setupFS($this->userId);
         $this->view = Filesystem::getView();
         
         if ($complete)

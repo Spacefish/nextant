@@ -127,6 +127,12 @@ class Live extends Base
                         $this->queueService->executeItem($item);
                     }
                 }
+                
+                //
+                //
+                // IDBConnection::connect()
+                //
+                //
             } catch (\Doctrine\DBAL\Exception\DriverException $dbde) {
                 $output->writeln('**** DRIVEREXCEPTION');
                 // $ierror = new ItemError(SolrService::EXCEPTION_HTTPEXCEPTION, $dbde->getStatusMessage());
